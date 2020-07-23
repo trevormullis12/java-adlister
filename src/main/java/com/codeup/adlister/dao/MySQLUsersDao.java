@@ -30,7 +30,19 @@ public class MySQLUsersDao implements Users{
 
     @Override
     public User findByUsername(String username) {
+        try {
+            String sql = "SELECT * FROM users WHERE username LIKE ?";
+            String searchUser = "%" + username + "%";
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            stmt.setString(1, searchUser);
+            stmt.setString(1, searchUser);
+        } catch() {
 
+        }
+        ResultSet rs = stmt.executeQuery();
+        while(rs.next()) {
+            // do something with the search results
+        }
         return null;
     }
 

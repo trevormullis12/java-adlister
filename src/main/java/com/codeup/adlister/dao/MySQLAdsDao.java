@@ -80,7 +80,9 @@ public class MySQLAdsDao implements Ads {
     }
 
     public static void main(String[] args) {
-        Ads adsDao = new MySQLAdsDao();
-
+//        Ad myBike = new Ad(1, "Popup: The Game", "please I need to get rid of this.");
+//        Ads adsDao = new MySQLAdsDao(new Config());
+//        System.out.println(adsDao.all());
+//        adsDao.insert(myBike);
     }
 }
