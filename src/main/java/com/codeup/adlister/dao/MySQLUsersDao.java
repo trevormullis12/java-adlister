@@ -1,0 +1,26 @@
+package com.codeup.adlister.dao;
+
+import com.codeup.adlister.models.Ad;
+import com.codeup.adlister.models.User;
+import com.mysql.cj.jdbc.Driver;
+import models.Config;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class MySQLUsersDao implements Users{
+
+    @Override
+    public User findByUsername(String username) {
+        return null;
+    }
+
+    @Override
+    public Long insert(User user) {
+        return null;
+    }
+}
